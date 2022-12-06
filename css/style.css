@@ -59,6 +59,22 @@
 
     opacity: .75;
 }
+.light-theme-clr{
+    /* background-color*/
+    --clr-background: #f6f6f6;
+
+    --clr-white: #fff;
+    /* dark and light */
+    --clr-dark: #363949;
+    --clr-light: #848bc82e;
+    /* color variants*/
+    --clr-dark-variant: #677483;
+
+    /* box shadow */
+    --box-shadow: 0 2rem 3rem var(--clr-light);
+
+    opacity: 1;
+}
 
 *{
     text-decoration: none;

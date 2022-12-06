@@ -2,7 +2,8 @@ const sideMenu = document.querySelector('aside');
 const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
 const themeToggle = document.querySelector('.theme-toggler');
-
+// const themeToggle = document.getElementById('dark');
+// const themeToggleLight = document.getElementById("light");
 
 // show side menu function 
 menuBtn.addEventListener('click', () => {
@@ -12,12 +13,17 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     sideMenu.style.display = 'none';
 });
-// theme change function 
+// dark theme change function 
 themeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-theme-clr');
 
     themeToggle.querySelector('span').classList.toggle('active');
 })
+// themeToggleLight.addEventListener("click", () => {
+//     document.body.classList.toggle("light-theme-clr");
+
+//     themeToggleLight.querySelector("span").classList.toggle("active");
+// });
 
 // add active class to side menu 
 const sideMenuActive = document.querySelectorAll("#dash_a");
