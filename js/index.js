@@ -21,7 +21,7 @@ themeToggle.addEventListener('click', () => {
 // fill the orders table 
 orders.forEach(orders => {
     const tr = document.createElement('tr');
-    const trContent = '<td>${orders.productName}</td><td>${order.productNumber}</td><td>${order.paymentStatus}</td><td class ="danger">${order.shipping}</td><td class ="primary">Details</td>';
+    const trContent = '<td>${orders.productName}</td><td>${order.orderNumber}</td><td>${order.paymentStatus}</td><td class ="danger">${order.shipping}</td><td class ="primary">Details</td>';
 
     tr.innerHTML = trContent;
     document.querySelector('table tbody').appendChild(tr);
