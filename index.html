@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--google icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+sharp"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Dashboard</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!----------------------start of aside----------------------------------------->
+      <aside>
+        <div class="aside__top">
+          <div class="aside__top-logo">
+            <img src="assets/logo.png" alt="logo" />
+            <h2>M<span class="prospect">ℰƧ</span>H</h2>
+          </div>
+        </div>
+
+        <div class="aside__close" id="close-btn">
+          <span class="material-icons-sharp">close</span>
+        </div>
+        <div class="aside__sidebar">
+          <a href="" >
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/dashbord.png"
+                alt="dash"
+                class="dash-images"
+              />
+              <h3>Dashboard</h3>
+            </span>
+          </a>
+          <a href="" >
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/customers.png"
+                alt="customr"
+                class="dash-images"
+              />
+              <h3>Customers</h3>
+            </span>
+          </a>
+          <a href="">
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/orders.png"
+                alt="order"
+                class="dash-images"
+              />
+              <h3>Orders</h3>
+            </span>
+          </a>
+          <a href="" class="active">
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/analytics.png"
+                alt="analyst"
+                class="dash-images"
+              />
+              <h3>Analytics</h3>
+            </span>
+          </a>
+          <a href="">
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/messages.png"
+                alt="inbox"
+                class="dash-images"
+              />
+              <h3>Messages</h3><span class="message-count">12</span>
+            </span>
+          </a>
+          <a href="">
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/products.png"
+                alt="product"
+                class="dash-images"
+              />
+              <h3>Products</h3>
+            </span>
+          </a>
+          <a href="">
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/reports.png"
+                alt="reports"
+                class="dash-images"
+              />
+              <h3>Reports</h3>
+            </span>
+          </a>
+          <a href="">
+            <span class="dash-icons">
+              <img
+                src="assets/dash-icons/settings.png"
+                alt="Setting"
+                class="dash-images"
+              />
+              <h3>Settings</h3>
+            </span>
+        </a>
+        <a href="">
+            <span class="dash-icons">
+            <img
+                src="assets/dash-icons/add.png"
+                alt="add"
+                class="dash-images"/>
+            <h3>Add</h3>
+            </span>
+        </a>
+        <a href="">
+            <span class="dash-icons">
+            <img
+                src="assets/dash-icons/logoout.png"
+                alt="logout"
+                class="dash-images"/>
+            <h3>Logout</h3>
+            </span>
+        </a>
+        </div>
+    </aside>
+    <!----------------------end of aside----------------------------------------->
+    <!---------------------- start of middle section---------------------------------------->
+    <main class="middle">
+        <h1>Dashboard</h1>
+
+        <div class="main__date">
+            <input type="date" name="" id="" />
+        </div>
+
+        <div class="middle__insights">
+
+            <div class="middle__insights-sales">
+                <span class="dash-icons">
+                    <img src="assets/mid-icons/mid-analytics.png" alt="analytics" class="dash-images"></span>
+                <div class="insights-col"> <!--middle middle__insights-sales_col --->
+                    <div class="col-left">          <!--left sales_col--->
+                        <h3>Total Sales</h3>
+                        <h1><small>KES</small>2,524,035</h1>
+                    </div>
+                <div class="progress">
+                    <svg>
+                        <circle class="sales-circle" cx="38" cy="38" r="36"></circle>
+                    </svg>
+                <div class="number">
+                    <p>81%</p>
+                </div>
+                </div>
+                </div>
+            <small class="text-muted">:Last 24 Hours</small>
+        </div>
+
+        <!--end of sales-->
+            <div class="middle__insights-expenses">
+                <span class="dash-icons">
+                    <img src="assets/mid-icons/expenses.png" alt="analytics" class="dash-images"></span>
+                <div class="insights-col"> <!--middle--->
+                    <div class="col-left">          <!--left--->
+                        <h3>Total Expenses</h3>
+                        <h1><small>KES</small>1,327,012</h1>
+                    </div>
+                <div class="progress">
+                    <svg>
+                        <circle class="expenses-circle" cx="38" cy="38" r="36"></circle>
+                    </svg>
+                <div class="number">
+                    <p>62%</p>
+                </div>
+                </div>
+                </div>
+            <small class="text-muted">:Last 24 Hours</small>
+        </div>
+        <!--end of expense-->
+
+            <div class="middle__insights-income">
+                <span class="dash-icons">
+                    <img src="assets/mid-icons/income.png" alt="analytics" class="dash-images"></span>
+                <div class="insights-col"> <!--middle--->
+                    <div class="col-left">          <!--left--->
+                        <h3>Total Income</h3>
+                        <h1><small>KES</small>1,078,956</h1>
+                    </div>
+                <div class="progress">
+                    <svg>
+                        <circle class="income-circle" cx="38" cy="38" r="36"></circle>
+                    </svg>
+                <div class="number">
+                    <p>44%</p>
+                </div>
+                </div>
+                </div>
+            <small class="text-muted">:Last 24 Hours</small>
+        </div>
+        <!--end of expense-->
+
+    </div>
+<!--++++++++++++++++++++++++++++end of middle insights++++++++++++++++++++++++++++++-->
+
+      <div class="recent-orders">
+        <h2>Recent Orders</h2>
+        <table>
+          <!-- <caption>Table for various activities</caption> -->
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Product Number</th>
+              <th>Payment</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>Ugali Re-imagined</td>
+              <td>879564</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Ugali Re-imagined</td>
+              <td>879564</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Ugali Re-imagined</td>
+              <td>879564</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Ugali Re-imagined</td>
+              <td>879564</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr>
+            <tr>
+              <td>Ugali Re-imagined</td>
+              <td>879564</td>
+              <td>Due</td>
+              <td class="warning">Pending</td>
+              <td class="primary">Details</td>
+            </tr> -->
+          </tbody>
+        </table>
+        <a href="#">Show All</a>
+      </div>
+    </main>
+
+    <!--++++++++++++++++++++++++++++eMain Middle section++++++++++++++++++++++++++++++-->
+
+    <div class="right-section">
+      <div class="top">
+      <button id="menu-btn">
+        <span class="dash-icons"><img src="assets/right-icons/tasks.png" alt="" class="dash-images"></span>
+      </button>
+
+      <div class="theme-toggler">
+        <span class="active" id="light"><img src="assets/right-icons/sun.png" alt="" class="dash-images"></span><!--comeback to this-->
+        <span class="" id="dark"><img src="assets/right-icons/moon.png" alt="" class="dash-images"></span><!--comeback to this-->
+      </div>
+
+      <div class="profile">
+        <div class="info">
+          <p>Hey, <b>Mesh</b></p>
+          <small class="text-muted">Admin</small>
+        </div>
+        <div class="profile-photo">
+          <img src="assets/right-icons/unicorn.jpg" alt="" class="profile-photo">
+        </div>
+      </div>
+    </div>
+    <!---------------------- end of right top-pp area------------------------------------>
+    <div class="recent-updates">
+      <h2>Recent updates</h2>
+      <div class="updates">
+        <div class="update">
+          <div class="profile-photo">
+            <img src="assets/right-icons/Anonymous.png" alt="">
+          </div>
+          <div class="message">
+            <p><b>Maylin Celani </b>received Ugali re-imagined order</p>
+            <small class="text-muted">6 Minutes Ago</small>
+          </div>
+          </div>
+          <div class="update">
+          <div class="profile-photo">
+            <img src="assets/right-icons/android_os.png" alt="">
+          </div>
+          <div class="message">
+            <p><b>Alice Muthoni </b>pending Ugali Sukuma order</p>
+            <small class="text-muted">2 Minutes Ago</small>
+          </div>
+        </div>
+        <div class="update">
+          <div class="profile-photo">
+            <img src="assets/right-icons/skull.png" alt="">
+          </div>
+          <div class="message">
+            <p><b>Mesh Njihia </b>placed Ugali re-imagined order</p>
+            <small class="text-muted">1 Minutes Ago</small>
+          </div>
+        </div>
+        <div class="update">
+          <div class="profile-photo">
+            <img src="assets/right-icons/linux.png" alt="">
+          </div>
+          <div class="message">
+            <p><b>Popins chadureka </b>cancelled githeri order</p>
+            <small class="text-muted">2 Seconds Ago</small>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!---------------------- end of updates top-pp area---------------------------------->
+    <div class="sales-analytics">
+      <h2>Sales Analytics</h2>
+      
+      <div class="item online">
+        <div class="icon">
+          <span>ic</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>ONLINE ORDERS</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h5 class="success">+39 %</h5>
+          <h3>78955</h3>
+        </div>
+      </div>
+      <div class="item offline">
+        <div class="icon">
+          <span>ic</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>OFFLINE ORDERS</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h5 class="danger">-19 %</h5>
+          <h3>48975</h3>
+        </div>
+      </div>
+      <div class="item customers">
+        <div class="icon">
+          <span>ic</span>
+        </div>
+        <div class="right">
+          <div class="info">
+            <h3>NEW CUSTOMERS</h3>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <h5 class="warning">+25 %</h5>
+          <h3>955</h3>
+        </div>
+      </div>
+      <div class="item add-product">
+        <div>
+          <span>
+            +
+          </span>
+          <h3>Add product</h3>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- end of sales analytics section -->
+    </div>
+
+    </div>
+
+    <script src="js/orders.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
