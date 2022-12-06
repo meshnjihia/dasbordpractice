@@ -432,15 +432,17 @@ main .main__date {
     border-radius: var(--border-radius-3);
     cursor: pointer;
 }
-.theme-toggler #light {
-    background: rgb(17, 36, 80);
+.theme-toggler #dark {
+    background: var(--clr-info-dark);
     height: 1.7rem;
     width: 1.6rem;
     border-radius: var(--border-radius-3);
+    color: var(--clr-white);
 }
-.theme-toggler #dark {
-    background: #ffffff;
+.theme-toggler #light {
+    background: var(--clr-info-light);
     border-radius: var(--border-radius-3);
+    color: var(--clr-white);
 }
 .right-section .theme-toggler span {
     width: 50%;
@@ -450,7 +452,8 @@ main .main__date {
     justify-content: center;
 }
 .right-section .theme-toggler span.active {
-    background: #000000;
+    background: var(--clr-info-dark);
+    color: var(--clr-white);
 }
 .right-section .top .profile {
     display:flex;
