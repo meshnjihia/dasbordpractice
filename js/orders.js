@@ -27,6 +27,6 @@ const orders = [
     productName: "Kuku kienyeji",
     productNumber: "34975",
     productStatus: "Paid",
-    shipping: "On Route",
+    shipping: "Delivered",
     }
 ];
