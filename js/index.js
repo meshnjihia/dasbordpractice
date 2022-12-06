@@ -3,6 +3,7 @@ const menuBtn = document.getElementById('menu-btn');
 const closeBtn = document.getElementById('close-btn');
 const themeToggle = document.querySelector('.theme-toggler');
 
+
 // show side menu function 
 menuBtn.addEventListener('click', () => {
     sideMenu.style.display = 'block';
@@ -17,6 +18,16 @@ themeToggle.addEventListener('click', () => {
 
     themeToggle.querySelector('span').classList.toggle('active');
 })
+
+// add active class to side menu 
+const sideMenuActive = document.querySelectorAll("#dash_a");
+sideMenuActive.forEach(dash_a => {
+    dash_a.addEventListener('click', function (){
+        sideMenuActive.forEach(atn => atn.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
 
 // fill the orders table 
 orders.forEach(orders => {
