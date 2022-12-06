@@ -514,7 +514,7 @@ main .main__date {
     width: 100%;
 }
 .right-section .sales-analytics .item .icon {
-    padding: .6rem;
+    padding: 1rem;
     color: var(--clr-white);
     border-radius: 50%;
     display: flex;
