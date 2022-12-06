@@ -35,11 +35,26 @@ sideMenuActive.forEach(dash_a => {
 });
 
 
-// fill the orders table 
-orders.forEach(orders => {
-    const tr = document.createElement('tr');
-    const trContent = '<td>${orders.productName}</td><td>${order.orderNumber}</td><td>${order.paymentStatus}</td><td class ="danger">${order.shipping}</td><td class ="primary">Details</td>';
+// fill the orders table
+// orders.forEach(orders => {
+//     const tr = document.createElement('tr');
+//     const trContent = '<td>${orders.productName}</td><td>${order.orderNumber}</td><td>${order.paymentStatus}</td><td class ="danger">${order.shipping}</td><td class ="primary">Details</td>';
 
-    tr.innerHTML = trContent;
-    document.querySelector('table tbody').appendChild(tr);
-})
+//     tr.innerHTML = trContent;
+//     document.querySelector('table tbody').appendChild(tr);
+// })
+const table = document.getElementById('tableBody');
+orders.map(orders => { 
+    let row = table.insertRow();
+    let productName = row.insertCell(0);
+    productName.innerHTML = orders.productName;
+
+    let orderNumber = row.insertCell(1);
+    orderNumber.innerHTML = orders.orderNumber;
+
+    let paymentStatus = row.insertCell(2);
+    paymentStatus.innerHTML = orders.paymentStatus;
+
+    let shipping = row.insertCell(3);
+    shipping.innerHTML = orders.shipping;
+});

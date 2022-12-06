@@ -3,7 +3,7 @@ const orders = [
     productName: "Ugali redefined",
     orderNumber: "14846",
     productStatus: "Due",
-        shipping: "pending",
+    shipping: "pending",
     },
     {
     productName: "Rice Madodo",
